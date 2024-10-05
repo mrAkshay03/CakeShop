@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @import url(./css/bootstrap.min.css); */
+        body{
+
+            margin: 0;
+            padding: 0;
+           background-color:rgb(253, 239, 229);     
+             background-size: cover;  
+
+        }
+
+        .screen{
+
+            width: 100%;
+            height: 100%;
+
+
+            display: grid;
+            grid-template-areas: 'navbar navbar'
+            'main main ' 'footer footer';
+            grid-template-columns: 100vh;
+            grid-template-rows: 200px 70vh 200px;
+                   
+        }
+        .navbar>h1{
+            color: rgb(224, 234, 242);
+        }
+        .navbar>h1>p{
+            font-size: 20px;
+            color: rgb(239, 213, 253);
+            margin-top: 0;
+            margin-left: 20px;
+            text-shadow: 1px 1px 1px rgb(161, 163, 3);
+          
+        }
+        ins{
+          color: rgb(250, 250, 250);
+          font-family: 'Times New Roman', Times, serif;
+          font-style: inherit;
+          text-shadow: 5px 1px 1px rgb(86, 2, 2);
+        
+        }
+        .navbar{
+            grid-area: navbar;
+        
+            
+            background-image: linear-gradient(100deg, rgba(253, 25, 147, 0.497)20% , rgba(251, 43, 154, 0.497)80%);
+           
+         /* background-color: rgb(236,38,143); */
+            border-radius: 0 0 50% 50% / 20% 0 100% 100%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 5px 5px 5px black;
+       
+            gap: 150px;
+            
+           
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        button{
+            padding: 10px 10px ;
+            background-color: transparent;
+            border:none;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px black;
+       
+
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            color: aliceblue;
+
+        }
+        #idcup{
+            position: absolute;
+            display: none;
+        }
+        #idcup:hover{
+            position: fixed;
+       
+            display: inline;
+            background-color: aqua;
+        }
+
+        .main{
+            grid-area: main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-bottom: 700px;
+         }
+         .box {
+            width: 500px;
+            height: 200px;
+            margin-top: 100px;
+            scale: 1;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            
+           
+        }
+       
+       
+        .box>p ,h1{
+            font-size: 40px;
+           color: rgb(0, 0, 0);
+           transition: 1s;
+           
+           text-align: center;
+          
+    
+        }
+        .footer{
+            grid-area: footer;
+            background-color: rgb(243, 230, 230);
+            margin-bottom: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            
+
+        }
+        .card{
+            width: 250px ;
+            height: 250px;
+            background-image: url(./body-bg.png);
+            font-size: 20px;
+            box-shadow: 9px 9px 10px 10px black;
+            margin-top: 0;
+            border-radius: 20px;
+        }
+        .card,button{
+            padding: 10px 15px;
+            
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .card,img{
+            border-radius: 20px;
+        }
+        #red{
+            background-color: brown;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        #red:hover{
+            cursor: pointer;
+            background-color: rgb(0, 255, 255);
+            color: black;
+        }
+        #imgd{
+            box-shadow: 10px 10px 10px black;
+            transition: all 5s;
+
+
+        }
+
+        #imgd:hover{
+
+            width: 300px ;
+            margin-left: 200px;
+            margin-top: 100px;
+       
+            transition: all 1s;
+        }
+       
+        
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="screen">
+
+        <div class="navbar">
+            <h1><ins> <img src="./cupcake_8925735.png" alt="" width="50px" height="50px">||| BHOSALE CAKE SHOP </ins>
+                <p>Best Cakes in Akluj</p></h1>
+            
+    
+            <ul>
+                <li><button> 🏠 Home</button></li>
+                <li><button>Cupcake</li></button>
+                <li id="idcup">home</li></button></li>
+                <li><button>Recipes</button></li>
+                <li><button>Blog</button></li>
+                <li><button>Order Online</button></li>
+                <li><button> ☎️ Contact Us</button></li>
+                <li><button> 🖥️ Account</button></li>
+            </ul>
+
+         
+
+        </div>
+
+
+        <div class="main">
+            <div class="box">
+                <p>
+                    <h1> BHOSALE Baker's </h1>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Cumque, cum minima? At aspernatur nulla, beatae temporibus
+                      
+                </p>
+            </div>
+               
+                <img src="./cupcake_1921257.png" alt="" width="200px"  id="imgd" > <br>
+                
+                
+
+        </div>
+       <div class="footer">
+        <div class="card">
+            <img src="./cupcakes.jpg" alt="" width="250px">
+            <p>350/KG</p>
+            <button id="red">Order Now</button>
+        </div>
+        <div class="card">
+            <img src="./landscap image.jpg" alt="" width="250px">
+            <p>350/KG</p>
+            <button id="red">Order Now</button>
+        </div>
+        <div class="card">
+            <img src="./landscap image hotel view.jpg" alt="" width="250px">
+            <p>350/KG</p>
+            <button id="red">Order Now</button>
+        </div>
+        <div class="card">
+            <img src="./lanscapimage white.jpg" alt="" width="250px">
+            <p>350/KG</p>
+            <button id="red">Order Now</button>
+        </div>
+
+        
+       </div>
+       
+       <p></p>
+
+        
+
+
+
+
+
+   
+    </div>
+
+
+    <script>
+        
+    </script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
